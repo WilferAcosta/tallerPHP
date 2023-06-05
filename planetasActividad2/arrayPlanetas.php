@@ -6,9 +6,8 @@ $numeroPlaneta='deshabilitado';
 if (isset($_POST)) {
     $numeroPlaneta=$_POST["cantidad"];
     $sistema = array_fill(0, $numeroPlaneta, 'planeta');
-    //var_dump($sistema);
     function imprimir($planeta){
-    echo "$planeta...\n";
+    echo "<p>...$planeta...\n</p>";
     };
     echo"<br>";
     array_walk($sistema,'imprimir');
